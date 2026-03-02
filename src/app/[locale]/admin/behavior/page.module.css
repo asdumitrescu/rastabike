@@ -1,0 +1,199 @@
+.behaviorPage {
+    max-width: 1100px;
+}
+
+.behaviorPage h1 {
+    font-size: var(--fs-2xl);
+    margin-block-end: var(--space-8);
+}
+
+.section {
+    margin-block-end: var(--space-8);
+}
+
+.section h2 {
+    font-size: var(--fs-lg);
+    margin-block-end: var(--space-4);
+}
+
+.card {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Flow */
+.flowList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.flowItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-3);
+    border-radius: var(--radius-lg);
+    background: var(--neutral-50);
+}
+
+.flowCount {
+    font-family: var(--font-display);
+    font-weight: var(--fw-bold);
+    color: var(--rasta-green);
+    min-width: 36px;
+}
+
+.flowPath {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+}
+
+.flowStep {
+    font-size: var(--fs-sm);
+    padding: var(--space-1) var(--space-2);
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.flowArrow {
+    color: var(--text-light);
+    margin-inline: var(--space-1);
+}
+
+/* Scroll */
+.scrollList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.scrollItem {
+    display: grid;
+    grid-template-columns: 1fr 200px 50px;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.scrollPage {
+    font-size: var(--fs-sm);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.scrollBar {
+    height: 8px;
+    background: var(--neutral-100);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.scrollFill {
+    height: 100%;
+    background: var(--gradient-rasta-horizontal);
+    border-radius: var(--radius-full);
+    transition: width var(--transition-base);
+}
+
+.scrollValue {
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-semibold);
+    text-align: end;
+}
+
+/* Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: start;
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-semibold);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.table td {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--fs-sm);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.elementId {
+    font-family: monospace;
+    font-size: var(--fs-xs);
+    color: var(--rasta-green-dark);
+}
+
+.clickCount {
+    font-weight: var(--fw-semibold);
+}
+
+/* Summary */
+.summaryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--space-4);
+}
+
+.summaryCard {
+    text-align: center;
+    padding: var(--space-6);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+}
+
+.summaryIcon {
+    font-size: 2rem;
+    display: block;
+    margin-block-end: var(--space-3);
+}
+
+.summaryValue {
+    font-family: var(--font-display);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    margin: 0;
+}
+
+.summaryLabel {
+    font-size: var(--fs-xs);
+    color: var(--text-secondary);
+    margin: 0;
+    margin-block-start: var(--space-1);
+}
+
+/* Empty states */
+.empty {
+    text-align: center;
+    padding: var(--space-8);
+    color: var(--text-light);
+}
+
+.empty p {
+    margin: 0;
+}
+
+.emptyHint {
+    font-size: var(--fs-xs);
+    margin-block-start: var(--space-2);
+}
+
+@media (max-width: 768px) {
+    .scrollItem {
+        grid-template-columns: 1fr;
+        gap: var(--space-1);
+    }
+}

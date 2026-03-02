@@ -1,0 +1,114 @@
+.about {
+    padding-block-start: var(--space-4);
+}
+
+.header {
+    text-align: center;
+    padding-block: var(--space-12);
+    background: var(--gradient-dark);
+    color: var(--text-on-dark);
+}
+
+.header h1 {
+    color: var(--white);
+}
+
+/* Story */
+.storyLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+    align-items: center;
+}
+
+.storyImage {
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.brandImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.storyTitle {
+    font-size: var(--fs-2xl);
+    margin-block-end: var(--space-6);
+    background: var(--gradient-rasta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.storyText {
+    font-size: var(--fs-md);
+    color: var(--text-secondary);
+    line-height: var(--lh-relaxed);
+}
+
+/* Why Section */
+.whySection {
+    text-align: center;
+}
+
+.sectionTitle {
+    text-align: center;
+}
+
+.whyGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--space-8);
+}
+
+.whyCard {
+    background: var(--bg-secondary);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+    text-align: center;
+}
+
+.whyCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.whyIconWrapper {
+    width: 72px;
+    height: 72px;
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    margin-block-end: var(--space-5);
+}
+
+.whyIcon {
+    font-size: 2rem;
+}
+
+.whyCardTitle {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    margin-block-end: var(--space-3);
+}
+
+.whyCardDesc {
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    line-height: var(--lh-relaxed);
+    margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .storyLayout {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+}

@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "title": "RastaBike – Electric Bikes Catalog",
+    "description": "Explore our collection of premium electric bikes. Freedom on two wheels with Rasta vibes."
+  },
+  "nav": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "about": "About Us",
+    "contact": "Contact",
+    "admin": "Admin"
+  },
+  "hero": {
+    "title": "Freedom on Two Wheels",
+    "subtitle": "Discover our collection of premium electric bikes with Rasta soul",
+    "cta": "Explore Catalog",
+    "ctaSecondary": "Contact Us"
+  },
+  "catalog": {
+    "title": "Our Electric Bikes",
+    "subtitle": "Find your perfect ride",
+    "filterAll": "All Bikes",
+    "filterMountain": "Mountain",
+    "filterCity": "City",
+    "filterFatTire": "Fat Tire",
+    "filterFolding": "Folding",
+    "noResults": "No bikes found in this category",
+    "viewDetails": "View Details",
+    "featured": "Featured"
+  },
+  "product": {
+    "specs": "Specifications",
+    "battery": "Battery",
+    "range": "Range",
+    "motor": "Motor",
+    "weight": "Weight",
+    "topSpeed": "Top Speed",
+    "priceRange": "Price Range",
+    "inquireWhatsApp": "Inquire on WhatsApp",
+    "callUs": "Call Us",
+    "relatedBikes": "You May Also Like",
+    "backToCatalog": "Back to Catalog"
+  },
+  "about": {
+    "title": "About RastaBike",
+    "subtitle": "Our Story",
+    "mission": "Born from a love of the beach, the breeze, and the freedom of the open road. RastaBike brings you premium electric bikes with a soul — combining Israeli beach culture with eco-friendly transportation.",
+    "whyTitle": "Why RastaBike?",
+    "why1Title": "Eco-Friendly",
+    "why1Desc": "Zero emissions, pure freedom. Our electric bikes help you move sustainably.",
+    "why2Title": "Premium Quality",
+    "why2Desc": "Every bike is carefully selected for durability, performance, and style.",
+    "why3Title": "Beach Lifestyle",
+    "why3Desc": "Designed for the coastal life — sand, sun, and smooth rides.",
+    "why4Title": "Expert Support",
+    "why4Desc": "We're riders too. Get advice from people who know and love e-bikes."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch — we'd love to hear from you",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "facebook": "Facebook",
+    "location": "Location",
+    "locationValue": "Israel",
+    "formName": "Your Name",
+    "formEmail": "Your Email",
+    "formMessage": "Your Message",
+    "formSend": "Send Message",
+    "formSuccess": "Message sent! We'll get back to you soon."
+  },
+  "footer": {
+    "tagline": "Freedom on two wheels",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "contactUs": "Contact Us",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "switchLang": "עברית"
+  }
+}

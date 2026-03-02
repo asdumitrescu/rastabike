@@ -1,0 +1,127 @@
+.catalog {
+    padding-block-start: var(--space-4);
+}
+
+.header {
+    text-align: center;
+    padding-block: var(--space-12);
+    background: var(--gradient-dark);
+    color: var(--text-on-dark);
+}
+
+.header h1 {
+    color: var(--white);
+}
+
+.subtitle {
+    color: var(--neutral-300);
+    font-size: var(--fs-md);
+    margin-block-start: var(--space-4);
+}
+
+.content {
+    padding-block: var(--space-12);
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: var(--space-2);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-block-end: var(--space-10);
+}
+
+.filterBtn {
+    font-family: var(--font-display);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    padding: var(--space-2) var(--space-5);
+    border-radius: var(--radius-full);
+    border: 2px solid var(--border-color);
+    background: transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.filterBtn:hover {
+    border-color: var(--rasta-green);
+    color: var(--rasta-green);
+}
+
+.filterActive {
+    background: var(--rasta-green);
+    border-color: var(--rasta-green);
+    color: var(--white);
+}
+
+.filterActive:hover {
+    background: var(--rasta-green-dark);
+    border-color: var(--rasta-green-dark);
+    color: var(--white);
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-8);
+}
+
+.productLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.price {
+    font-family: var(--font-display);
+    font-weight: var(--fw-semibold);
+    color: var(--rasta-green);
+    margin: 0;
+    margin-block-end: var(--space-3);
+}
+
+.specRow {
+    display: flex;
+    gap: var(--space-4);
+    margin-block-end: var(--space-3);
+}
+
+.spec {
+    font-size: var(--fs-xs);
+    color: var(--text-secondary);
+}
+
+.viewBtn {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    color: var(--rasta-green);
+    margin-block-start: var(--space-2);
+    transition: color var(--transition-fast);
+}
+
+.productLink:hover .viewBtn {
+    color: var(--rasta-green-dark);
+}
+
+.empty {
+    text-align: center;
+    padding: var(--space-16);
+    color: var(--text-secondary);
+    font-size: var(--fs-lg);
+}
+
+@media (max-width: 768px) {
+    .filters {
+        gap: var(--space-2);
+    }
+
+    .filterBtn {
+        font-size: var(--fs-xs);
+        padding: var(--space-2) var(--space-3);
+    }
+}

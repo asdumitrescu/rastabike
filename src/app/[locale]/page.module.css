@@ -1,0 +1,163 @@
+/* Hero */
+.hero {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/hero-brand.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+            rgba(26, 26, 46, 0.5) 0%,
+            rgba(26, 26, 46, 0.7) 60%,
+            rgba(26, 26, 46, 0.9) 100%);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: var(--space-8);
+    max-width: 700px;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.heroTitle {
+    font-size: var(--fs-5xl);
+    font-weight: var(--fw-black);
+    color: var(--white);
+    margin-block-end: var(--space-4);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background: var(--gradient-rasta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.heroSubtitle {
+    font-size: var(--fs-lg);
+    color: var(--neutral-200);
+    margin-block-end: var(--space-8);
+    line-height: var(--lh-relaxed);
+}
+
+.heroCtas {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Section Header */
+.sectionHeader {
+    text-align: center;
+    margin-block-end: var(--space-12);
+}
+
+.sectionSubtitle {
+    font-size: var(--fs-md);
+    color: var(--text-secondary);
+    margin-block-start: var(--space-4);
+}
+
+/* Featured Grid */
+.featuredGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-8);
+}
+
+.productLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.specPills {
+    display: flex;
+    gap: var(--space-2);
+    margin-block-start: var(--space-3);
+    flex-wrap: wrap;
+}
+
+.pill {
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-medium);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    background-color: var(--neutral-100);
+    color: var(--text-secondary);
+}
+
+.viewAll {
+    text-align: center;
+    margin-block-start: var(--space-12);
+}
+
+/* Why RastaBike */
+.whyGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--space-8);
+}
+
+.whyCard {
+    text-align: center;
+    padding: var(--space-8);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.whyCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.whyIcon {
+    font-size: 2.5rem;
+    margin-block-end: var(--space-4);
+}
+
+.whyCardTitle {
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    margin-block-end: var(--space-3);
+}
+
+.whyCardText {
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    line-height: var(--lh-relaxed);
+    margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 70vh;
+    }
+
+    .heroTitle {
+        font-size: var(--fs-3xl);
+    }
+
+    .heroSubtitle {
+        font-size: var(--fs-base);
+    }
+
+    .heroCtas {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,30 @@
+.switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    font-size: var(--fs-sm);
+    color: inherit;
+    backdrop-filter: blur(4px);
+}
+
+.switcher:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.flag {
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+.label {
+    font-weight: var(--fw-medium);
+    font-family: var(--font-display);
+}

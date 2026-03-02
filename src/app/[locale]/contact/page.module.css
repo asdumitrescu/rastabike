@@ -1,0 +1,144 @@
+.contact {
+    padding-block-start: var(--space-4);
+}
+
+.header {
+    text-align: center;
+    padding-block: var(--space-12);
+    background: var(--gradient-dark);
+    color: var(--text-on-dark);
+}
+
+.header h1 {
+    color: var(--white);
+}
+
+.subtitle {
+    color: var(--neutral-300);
+    font-size: var(--fs-md);
+    margin-block-start: var(--space-4);
+}
+
+/* Cards */
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--space-6);
+    margin-block-end: var(--space-12);
+}
+
+.cardLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contactCard {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+    border: 1px solid var(--border-light);
+}
+
+.contactCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.cardIcon {
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-inline: auto;
+    margin-block-end: var(--space-4);
+}
+
+.cardTitle {
+    font-family: var(--font-display);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-block-end: var(--space-2);
+}
+
+.cardValue {
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    color: var(--text-primary);
+    margin: 0;
+}
+
+/* Form */
+.formSection {
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    padding: var(--space-10);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-md);
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.label {
+    font-family: var(--font-display);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    color: var(--text-secondary);
+}
+
+.input,
+.textarea {
+    padding: var(--space-3) var(--space-4);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    font-size: var(--fs-base);
+    color: var(--text-primary);
+    background: var(--bg-primary);
+    transition: border-color var(--transition-fast);
+    outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: var(--rasta-green);
+    box-shadow: 0 0 0 3px rgba(0, 155, 58, 0.1);
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.successMsg {
+    text-align: center;
+    color: var(--rasta-green);
+    font-weight: var(--fw-semibold);
+    margin: 0;
+    animation: fadeIn 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .form {
+        padding: var(--space-6);
+    }
+}

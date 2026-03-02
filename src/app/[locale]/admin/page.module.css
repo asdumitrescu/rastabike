@@ -1,0 +1,228 @@
+.dashboard {
+    max-width: 1100px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-end: var(--space-8);
+    flex-wrap: wrap;
+    gap: var(--space-4);
+}
+
+.header h1 {
+    font-size: var(--fs-2xl);
+}
+
+.rangeSelector {
+    display: flex;
+    gap: var(--space-1);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-1);
+    box-shadow: var(--shadow-sm);
+}
+
+.rangeBtn {
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    background: transparent;
+    border: none;
+    font-family: var(--font-display);
+}
+
+.rangeBtn:hover {
+    color: var(--text-primary);
+}
+
+.rangeBtnActive {
+    background: var(--rasta-green);
+    color: var(--white);
+}
+
+/* KPI Cards */
+.kpiGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--space-4);
+    margin-block-end: var(--space-8);
+}
+
+.kpiCard {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.kpiCard:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.kpiIcon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+.kpiValue {
+    font-family: var(--font-display);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.kpiLabel {
+    font-size: var(--fs-xs);
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Charts */
+.chartsRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+}
+
+.chartCard {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    box-shadow: var(--shadow-sm);
+}
+
+.chartCard h3 {
+    font-size: var(--fs-base);
+    margin-block-end: var(--space-5);
+}
+
+/* Bar Chart */
+.barChart {
+    display: flex;
+    align-items: flex-end;
+    gap: var(--space-1);
+    height: 200px;
+    padding-block-start: var(--space-4);
+}
+
+.barWrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-1);
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.bar {
+    width: 100%;
+    max-width: 28px;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    background: var(--gradient-rasta);
+    transition: height var(--transition-base);
+    min-height: 4px;
+}
+
+.barLabel {
+    font-size: 9px;
+    color: var(--text-light);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+
+/* Top Pages */
+.topPages {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.topPageItem {
+    display: grid;
+    grid-template-columns: 28px 1fr 100px 40px;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.topPageRank {
+    font-size: var(--fs-xs);
+    color: var(--text-light);
+    font-weight: var(--fw-semibold);
+}
+
+.topPageName {
+    font-size: var(--fs-sm);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.topPageBar {
+    height: 6px;
+    background: var(--neutral-100);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.topPageFill {
+    height: 100%;
+    background: var(--gradient-rasta-horizontal);
+    border-radius: var(--radius-full);
+    transition: width var(--transition-base);
+}
+
+.topPageCount {
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-semibold);
+    text-align: end;
+}
+
+/* Empty state */
+.emptyChart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.emptyChart p {
+    margin: 0;
+}
+
+.emptyHint {
+    font-size: var(--fs-xs);
+    margin-block-start: var(--space-2);
+}
+
+@media (max-width: 768px) {
+    .chartsRow {
+        grid-template-columns: 1fr;
+    }
+
+    .kpiGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
