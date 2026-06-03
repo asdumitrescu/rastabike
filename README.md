@@ -1,8 +1,9 @@
-# RastaBike
+﻿# RastaBike
 
 RastaBike is a polished browser mock for an electric bike catalog. It includes a public website, English and Hebrew pages, product detail pages, a contact form mock, and a local admin analytics mock.
 
 The easiest way to run it is with Docker. You do not need to install Node.js, Next.js, or any JavaScript tools on your computer.
+
 
 ## What You Get
 
@@ -22,10 +23,41 @@ docker compose up --build
 ```
 
 Open the app:
+=======
+
+## What You Get
+
+- Home page with RastaBike branding.
+- Product catalog with filters.
+- Product detail pages.
+- English and Hebrew routes.
+- Contact page with phone, WhatsApp, Facebook, and a mock form.
+- Mock admin dashboard.
+- Browser-only analytics stored in localStorage.
+- Docker setup for one-command startup.
+
+## Quick Start
+
+For a brand-new computer, do these steps:
+
+1. Install Docker.
+2. Install Git.
+3. Download this project with Git.
+4. Start the app with Docker.
+
+The project link is:
+
+```text
+https://github.com/asdumitrescu/rastabike.git
+```
+
+After setup, the app opens here:
+>>>>>>> 1acde13 (Add Docker setup and beginner README)
 
 ```text
 http://localhost:3000/en
 ```
+
 
 Hebrew version:
 
@@ -59,6 +91,28 @@ If both commands print versions, Docker is ready.
 
 ### Windows
 
+=======
+## Install Docker
+
+Docker lets you run the app in a container. Think of the container as a small box that already has everything the app needs.
+
+### Docker On Linux
+
+1. Install Docker Desktop for Linux:
+   https://docs.docker.com/desktop/setup/install/linux/
+2. Open Docker Desktop and make sure it is running.
+3. Open a terminal and check:
+
+```bash
+docker --version
+docker compose version
+```
+
+If both commands print versions, Docker is ready.
+
+### Docker On Windows
+
+>>>>>>> 1acde13 (Add Docker setup and beginner README)
 1. Install Docker Desktop for Windows:
    https://docs.docker.com/desktop/setup/install/windows-install/
 2. During installation, allow WSL 2 if Docker asks.
@@ -73,11 +127,67 @@ docker compose version
 
 If both commands print versions, Docker is ready.
 
+<<<<<<< HEAD
+=======
+## Install Git
+
+Git is the tool used to download the project from GitHub.
+
+### Git On Linux
+
+Ubuntu or Debian:
+
+```bash
+sudo apt update
+sudo apt install git
+```
+
+Fedora:
+
+```bash
+sudo dnf install git
+```
+
+Arch Linux:
+
+```bash
+sudo pacman -S git
+```
+
+Check that Git works:
+
+```bash
+git --version
+```
+
+### Git On Windows
+
+1. Download Git for Windows:
+   https://git-scm.com/download/win
+2. Run the installer.
+3. The default installer options are fine.
+4. Open PowerShell and check:
+
+```powershell
+git --version
+```
+
+If it prints a version, Git is ready.
+
+## Download The Project
+
+Choose a folder where you want to save the project, then run the clone command.
+
+>>>>>>> 1acde13 (Add Docker setup and beginner README)
 ## Run The App On Linux
 
 Open a terminal:
 
 ```bash
+<<<<<<< HEAD
+=======
+cd ~
+>>>>>>> 1acde13 (Add Docker setup and beginner README)
 git clone https://github.com/asdumitrescu/rastabike.git
 cd rastabike
 docker compose up --build
@@ -94,6 +204,10 @@ http://localhost:3000/en
 Open PowerShell:
 
 ```powershell
+<<<<<<< HEAD
+=======
+cd $HOME
+>>>>>>> 1acde13 (Add Docker setup and beginner README)
 git clone https://github.com/asdumitrescu/rastabike.git
 cd rastabike
 docker compose up --build
@@ -105,6 +219,23 @@ Then open:
 http://localhost:3000/en
 ```
 
+<<<<<<< HEAD
+=======
+Hebrew version:
+
+```text
+http://localhost:3000/he
+```
+
+Stop the app:
+
+```bash
+docker compose down
+```
+
+The same stop command works in Windows PowerShell.
+
+>>>>>>> 1acde13 (Add Docker setup and beginner README)
 ## If Port 3000 Is Already Busy
 
 Use another port, for example `3002`.
