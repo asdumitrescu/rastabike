@@ -1,0 +1,13 @@
+services:
+  rastabike:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rastabike:local
+    container_name: rastabike-app
+    ports:
+      - "${HOST_PORT:-3000}:3000"
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+    restart: unless-stopped
