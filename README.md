@@ -235,7 +235,7 @@ docker compose down
 
 The same stop command works in Windows PowerShell.
 
->>>>>>> 1acde13 (Add Docker setup and beginner README)
+
 ## If Port 3000 Is Already Busy
 
 Use another port, for example `3002`.
