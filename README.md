@@ -52,7 +52,7 @@ https://github.com/asdumitrescu/rastabike.git
 ```
 
 After setup, the app opens here:
->>>>>>> 1acde13 (Add Docker setup and beginner README)
+
 
 ```text
 http://localhost:3000/en
@@ -112,7 +112,7 @@ If both commands print versions, Docker is ready.
 
 ### Docker On Windows
 
->>>>>>> 1acde13 (Add Docker setup and beginner README)
+
 1. Install Docker Desktop for Windows:
    https://docs.docker.com/desktop/setup/install/windows-install/
 2. During installation, allow WSL 2 if Docker asks.
@@ -127,7 +127,7 @@ docker compose version
 
 If both commands print versions, Docker is ready.
 
-<<<<<<< HEAD
+
 =======
 ## Install Git
 
@@ -178,16 +178,16 @@ If it prints a version, Git is ready.
 
 Choose a folder where you want to save the project, then run the clone command.
 
->>>>>>> 1acde13 (Add Docker setup and beginner README)
+
 ## Run The App On Linux
 
 Open a terminal:
 
 ```bash
-<<<<<<< HEAD
+
 =======
 cd ~
->>>>>>> 1acde13 (Add Docker setup and beginner README)
+
 git clone https://github.com/asdumitrescu/rastabike.git
 cd rastabike
 docker compose up --build
@@ -204,10 +204,10 @@ http://localhost:3000/en
 Open PowerShell:
 
 ```powershell
-<<<<<<< HEAD
+
 =======
 cd $HOME
->>>>>>> 1acde13 (Add Docker setup and beginner README)
+
 git clone https://github.com/asdumitrescu/rastabike.git
 cd rastabike
 docker compose up --build
@@ -219,7 +219,7 @@ Then open:
 http://localhost:3000/en
 ```
 
-<<<<<<< HEAD
+
 =======
 Hebrew version:
 
